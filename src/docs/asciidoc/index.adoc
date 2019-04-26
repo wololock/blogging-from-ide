@@ -6,6 +6,7 @@
 :sourcedir: ../java
 :customcss: css/custom.css
 :header_footer:
+:highlightjs-theme: css/atom-one-dark.css
 
 [%notitle]
 == Introduction
@@ -30,3 +31,23 @@ _+++<mark><b>Szymon Stepniak</b></mark>+++_
 I blog @ https://e.printstacktrace.blog[e.printstacktrace.blog] +
 Continuous Delivery Architect @ Upwork Global Inc. +
 Twitter: +++<mark>@wololock</mark>+++
+
+[%notitle]
+== Code
+
+[source,groovy]
+----
+package com.github.wololock
+
+import org.spockframework.runtime.extension.ExtensionAnnotation
+
+import java.lang.annotation.ElementType
+import java.lang.annotation.Retention
+import java.lang.annotation.RetentionPolicy
+import java.lang.annotation.Target
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
+@ExtensionAnnotation(RandomizedOrderExtension)
+@interface RandomizedOrder {}
+----
