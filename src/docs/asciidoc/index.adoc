@@ -6,7 +6,8 @@
 :sourcedir: ../java
 :customcss: css/custom.css
 :header_footer:
-:highlightjs-theme: css/atom-one-dark.css
+:highlightjs-theme: css/androidstudio.min.css
+:bg1: #666
 
 [%notitle]
 == Introduction
@@ -32,7 +33,7 @@ I blog @ https://e.printstacktrace.blog[e.printstacktrace.blog] +
 Continuous Delivery Architect @ Upwork Global Inc. +
 Twitter: +++<mark>@wololock</mark>+++
 
-[%notitle]
+[%notitle,background-color="{bg1}"]
 == Code
 
 [source,groovy]
