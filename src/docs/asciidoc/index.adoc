@@ -1,18 +1,15 @@
-[.stretch]
 = Running developer's +++<mark>blog</mark>+++ directly from an IDE+++<sup class="red">*</sup>+++
 :revnumber: {project-version}
-:example-caption!:
 :imagesdir: images
 :sourcedir: ../java
 :customcss: css/custom.css
-:header_footer:
 :highlightjs-theme: css/androidstudio.min.css
 :bg1: #666
 
 [%notitle]
 == Introduction
 
-image::vincent-tweet.png[scaledwidth=75%]
+image::vincent-tweet.png[]
 
 [.small]
 https://twitter.com/vvoyer/status/1087705536714412032
