@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Quattrocento+Sans|Ubuntu+Mono:400,700');
+@import "gr8conf.css";
 
 @keyframes slideInFromLeft {
     0% {
@@ -44,18 +45,6 @@
 
 .reveal .margin-left-200 {
     margin-left: 200px;
-}
-
-.reveal .slides:after {
-    position: absolute;
-    display: block;
-    content: ' ';
-    background-image: url('../images/gr8conf-2019.svg');
-    background-size: 96px 96px;
-    height: 96px;
-    width: 96px;
-    bottom: 0;
-    left: -5%;
 }
 
 .reveal h1,
