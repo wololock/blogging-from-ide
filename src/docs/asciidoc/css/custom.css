@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Quattrocento+Sans');
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.red {
+    color: red;
+}
+
+.reveal {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.reveal .lora {
+    font-family: 'Lora', serif;
+}
+
+.reveal .text-left {
+    text-align: left;
+}
+
+.reveal .margin-left-200 {
+    margin-left: 200px;
+}
+
+.reveal .slides:after {
+    position: absolute;
+    display: block;
+    content: ' ';
+    background-image: url('../images/gr8conf-2019.svg');
+    background-size: 96px 96px;
+    height: 96px;
+    width: 96px;
+    bottom: 0;
+    left: -5%;
+}
+
+.reveal h1,
+.reveal h2 {
+    font-family: 'Lora', serif;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.reveal h2 {
+    font-size: 4rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.reveal .present h2 {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.reveal h2:before,
+.reveal h2:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 2px;
+    content: '\a0';
+    background-color: #d3d9de;
+    margin-left: 20px;
+}
+
+.reveal h2:before {
+    margin-left: -52%;
+    text-align: right;
+}
+
+.reveal mark {
+    background: #ffcd00;
+}
+
+.reveal section img {
+    border: none;
+    box-shadow: none;
+}
+
+.reveal .author img {
+    border-radius: 50%;
+    width: 40%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px #bbb;
+}
+
+.reveal .author {
+    position: absolute;
+    top: -30px;
+    left: -70px;
+    z-index: 99;
+}
+
+.reveal .present .animation-slide-bottom {
+    animation: 1s ease-out 0s 1 slideInFromBottom;
+}
+.reveal .present .animation-slide-left {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.reveal .present .animation-slide-right {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}

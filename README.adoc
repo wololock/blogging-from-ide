@@ -1,0 +1,17 @@
+= Running developer's blog directly from IDE
+
+This is the source code of _"Running developer's blog directly from IDE"_ talk.
+
+== Usage
+
+Convert the AsciiDoc to reveal.js by invoking the 'asciidoctor' goal:
+
+ $ ./gradlew clean asciidoctor
+
+== IntelliJ
+
+If you're using IntelliJ you can generate the IDE's files via:
+
+ $ ./gradlew idea
+
+Open the file _build/asciidoc/reveal/example-manual.html_ in your browser to see the generated revealjs file.

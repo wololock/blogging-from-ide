@@ -1,0 +1,32 @@
+[.stretch]
+= Running developer's +++<mark>blog</mark>+++ directly from an IDE+++<sup class="red">*</sup>+++
+:revnumber: {project-version}
+:example-caption!:
+:imagesdir: images
+:sourcedir: ../java
+:customcss: css/custom.css
+:header_footer:
+
+[%notitle]
+== Introduction
+
+image::vincent-tweet.png[scaledwidth=75%]
+
+[.small]
+https://twitter.com/vvoyer/status/1087705536714412032
+
+[.stretch]
+== whoami
+
+[.author.animation-slide-left]
+image::wololock.jpg[scaledwidth=20%]
+
+[.lora.animation-slide-bottom.text-left.margin-left-200]
+_Hello, my name is_ +
+_+++<mark><b>Szymon Stepniak</b></mark>+++_
+
+
+[.animation-slide-right.text-left.margin-left-200]
+I blog @ https://e.printstacktrace.blog[e.printstacktrace.blog] +
+Continuous Delivery Architect @ Upwork Global Inc. +
+Twitter: +++<mark>@wololock</mark>+++
