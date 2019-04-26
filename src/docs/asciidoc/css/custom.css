@@ -76,7 +76,7 @@
 }
 
 .reveal .present h2 {
-    animation: 1s ease-out 0s 1 slideInFromRight;
+    animation: 650ms ease-out 0s 1 slideInFromRight;
 }
 
 .reveal h2:before,
@@ -120,11 +120,11 @@
 }
 
 .reveal .present .animation-slide-bottom {
-    animation: 1s ease-out 0s 1 slideInFromBottom;
+    animation: 650ms ease-out 0s 1 slideInFromBottom;
 }
 .reveal .present .animation-slide-left {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
+    animation: 650ms ease-out 0s 1 slideInFromLeft;
 }
 .reveal .present .animation-slide-right {
-    animation: 1s ease-out 0s 1 slideInFromRight;
+    animation: 650ms ease-out 0s 1 slideInFromRight;
 }
