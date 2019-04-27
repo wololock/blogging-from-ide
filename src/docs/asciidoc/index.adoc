@@ -14,7 +14,7 @@ image::vincent-tweet.png[]
 [.small]
 https://twitter.com/vvoyer/status/1087705536714412032
 
-[.stretch]
+[.stretch.whoami]
 == whoami
 
 [.author.animation-slide-left]
@@ -30,7 +30,7 @@ I blog @ https://e.printstacktrace.blog[e.printstacktrace.blog] +
 Continuous Delivery Architect @ Upwork Global Inc. +
 Twitter: +++<mark>@wololock</mark>+++
 
-[%notitle,background-color="{bg1}"]
+[background-color="{bg1}"]
 == Code
 
 [source,groovy]
