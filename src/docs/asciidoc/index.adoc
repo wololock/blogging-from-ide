@@ -6,6 +6,9 @@
 :highlightjs-theme: css/androidstudio.min.css
 :bg1: #666
 
+[.lora.small]
+([.red]#*# or any text editor of choice)
+
 [%notitle]
 == Introduction
 
@@ -53,7 +56,7 @@ Twitter: +++<mark>@wololock</mark>+++
 
 What does it mean _"blogging from an IDE"?_
 
-=== Source code
+== Source code
 
 [%notitle,background-color="{bg1}"]
 == Code

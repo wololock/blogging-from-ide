@@ -70,19 +70,24 @@
     font-family: 'Lora', serif;
     text-transform: none;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 4rem;
+}
+
+.reveal h1 {
+    padding-bottom: 20px;
+    border-bottom: 6px solid #f3f3f3;
 }
 
 .reveal h2 {
     font-size: 4rem;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
 }
 
 .reveal .whoami h2 {
     text-align: left;
     padding-left: 200px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .reveal .whoami.present h2 {
@@ -110,7 +115,8 @@
     font-family: 'Lora', serif;
 }
 
-.reveal mark {
+.reveal mark,
+.reveal .mark {
     background: #ffcd00;
 }
 
