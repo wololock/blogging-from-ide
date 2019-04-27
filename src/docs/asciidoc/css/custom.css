@@ -47,6 +47,10 @@
     margin-left: 200px;
 }
 
+.reveal .font-3rem {
+    font-size: 3rem;
+}
+
 .reveal h1,
 .reveal h2 {
     font-family: 'Lora', serif;
