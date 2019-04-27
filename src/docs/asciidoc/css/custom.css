@@ -64,6 +64,14 @@
     margin-left: 200px;
 }
 
+.reveal .margin-top-30 {
+    margin-top: 30px;
+}
+
+.reveal a {
+    color: #61aeee;
+}
+
 .reveal .font-3rem {
     font-size: 3rem;
 }
@@ -255,6 +263,10 @@
 }
 .reveal .logos.present .cloudflare {
     animation-duration: 3s;
+}
+
+.reveal .upwork img {
+    margin: 7px 0 -7px 0;
 }
 
 .reveal .present .animation-slide-bottom {

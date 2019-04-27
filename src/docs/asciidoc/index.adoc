@@ -1,5 +1,5 @@
 = Running developer's +++<mark>blog</mark>+++ directly from an IDE+++<sup class="red">*</sup>+++
-:event-name: GR8Conf EU 2019, May 27th // #GR8Conf
+:event-name: GR8Conf EU 2019, May 27th - 29th // #GR8Conf
 :event-logo: gr8conf-2019.svg
 :twitter: @wololock
 :revnumber: {project-version}
@@ -10,7 +10,7 @@
 :bg1: #666
 
 [.lora.small]
-([.red]#*# or any text editor of choice)
+([.red]#*# or any text editor of your choice)
 
 [%notitle]
 == Introduction
@@ -50,10 +50,10 @@ _Hello, my name is_ +
 _+++<mark><b>Szymon Stepniak</b></mark>+++_
 
 
-[.animation-slide-right.text-left.margin-left-200]
+[.animation-slide-right.text-left.margin-left-200.margin-top-30]
 I blog @ https://e.printstacktrace.blog[e.printstacktrace.blog] +
-Continuous Delivery Architect @ Upwork Global Inc. +
-Twitter: +++<mark>@wololock</mark>+++
+Continuous Delivery Architect @ image:upwork.jpg[height=32,role="upwork"] +
+icon:twitter[] @wololock
 
 == The +++<mark>basics</mark>+++
 
