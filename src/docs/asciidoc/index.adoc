@@ -1,4 +1,7 @@
 = Running developer's +++<mark>blog</mark>+++ directly from an IDE+++<sup class="red">*</sup>+++
+:event-name: GR8Conf EU 2019, May 27th // #GR8Conf
+:event-logo: gr8conf-2019.svg
+:twitter: @wololock
 :revnumber: {project-version}
 :imagesdir: images
 :sourcedir: ../java
@@ -77,3 +80,6 @@ import java.lang.annotation.Target
 @ExtensionAnnotation(RandomizedOrderExtension)
 @interface RandomizedOrder {}
 ----
+
+
+include::footer.adoc[]
