@@ -25,6 +25,20 @@
         transform: translateX(0);
     }
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 5%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 
 .red {
     color: red;
@@ -66,10 +80,13 @@
     overflow: hidden;
 }
 
-.reveal .whoami.present h2 {
-    animation: 650ms ease-out 0s 1 slideInFromRight;
+.reveal .whoami h2 {
     text-align: left;
     padding-left: 200px;
+}
+
+.reveal .whoami.present h2 {
+    animation: 650ms ease-out 0s 1 slideInFromRight;
 }
 
 .reveal .whoami h2:before,
@@ -87,6 +104,10 @@
 .reveal .whoami h2:before {
     margin-left: -52%;
     text-align: right;
+}
+
+.reveal em {
+    font-family: 'Lora', serif;
 }
 
 .reveal mark {
@@ -156,6 +177,75 @@
     border-top-right-radius: 0;
     max-height: 600px;
     padding: 10px 15px;
+}
+
+.reveal .logos {
+    position: relative;
+    height: 100%;
+}
+
+.reveal .logos .logo {
+    position: absolute;
+}
+
+.reveal .logos.present .logo {
+    animation: 1s ease-out 0s 1 fadeIn;
+}
+
+.reveal .logos .git {
+    top: 10%;
+    left: 15%;
+}
+.reveal .logos.present .git {
+    animation-duration: 3s;
+}
+
+.reveal .logos .github {
+    top: 5%;
+    right: 30%;
+}
+.reveal .logos.present .github {
+    animation-duration: 4s;
+}
+
+.reveal .logos .idea {
+    top: 30%;
+    right: 15%;
+}
+.reveal .logos.present .idea {
+    animation-duration: 5s;
+}
+
+.reveal .logos .asciidoctor {
+    top: 45%;
+    left: 10%;
+}
+.reveal .logos.present .asciidoctor {
+    animation-duration: 3s;
+}
+
+.reveal .logos .hexo {
+    top: 30%;
+    left: 50%;
+}
+.reveal .logos.present .hexo {
+    animation-duration: 2.5s;
+}
+
+.reveal .logos .travis {
+    top: 30%;
+    left: 27%;
+}
+.reveal .logos.present .travis {
+    animation-duration: 3s;
+}
+
+.reveal .logos .cloudflare {
+    bottom: 20%;
+    left: 30%;
+}
+.reveal .logos.present .cloudflare {
+    animation-duration: 3s;
 }
 
 .reveal .present .animation-slide-bottom {

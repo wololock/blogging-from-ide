@@ -14,6 +14,25 @@ image::vincent-tweet.png[]
 [.small]
 https://twitter.com/vvoyer/status/1087705536714412032
 
+[.logos.stretch]
+== !
+
+[.logo.git]
+image::logos/git.png[height=96]
+[.logo.github]
+image::logos/github.png[height=160]
+[.logo.asciidoctor]
+image::logos/asciidoctor.png[height=128]
+[.logo.idea]
+image::logos/idea.png[height=128]
+[.logo.travis]
+image::logos/travis.png[height=128]
+[.logo.hexo]
+image::logos/hexo.png[height=128]
+[.logo.cloudflare]
+image::logos/cloudflare.png[height=128]
+
+
 [.stretch.whoami]
 == whoami
 
@@ -30,7 +49,13 @@ I blog @ https://e.printstacktrace.blog[e.printstacktrace.blog] +
 Continuous Delivery Architect @ Upwork Global Inc. +
 Twitter: +++<mark>@wololock</mark>+++
 
-[background-color="{bg1}"]
+== The +++<mark>basics</mark>+++
+
+What does it mean _"blogging from an IDE"?_
+
+=== Source code
+
+[%notitle,background-color="{bg1}"]
 == Code
 
 [source,groovy]
