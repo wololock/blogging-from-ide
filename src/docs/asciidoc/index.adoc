@@ -252,7 +252,11 @@ image::static-gen.png[background,cover]
 
 image::awesome-static-generators.png[background,cover]
 
-==
+== Part 2: the [.mark]#deployment#
+
+== Part 3: living on [.mark]#production#
+
+
 
 
 //[%notitle,background-color="{bg1}"]
