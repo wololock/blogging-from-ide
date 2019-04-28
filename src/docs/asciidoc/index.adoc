@@ -234,6 +234,16 @@ image::hexo.png[background,cover]
 
 Demo time! icon:edit[]
 
+[%notitle,transition="none"]
+== StaticGen
+
+image::static-gen.png[background,cover]
+
+[%notitle,transition="none"]
+== awesome-static-generators
+
+image::awesome-static-generators.png[background,cover]
+
 
 //[%notitle,background-color="{bg1}"]
 //== Code
