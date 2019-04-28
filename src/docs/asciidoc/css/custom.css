@@ -175,6 +175,11 @@
     box-shadow: none;
 }
 
+.reveal pre.small {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 .reveal code {
     font-family: 'Ubuntu Mono', monospace;
 }

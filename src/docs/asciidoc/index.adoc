@@ -144,27 +144,116 @@ deploy:
 all_minifier: true
 ----
 
+[transition="slide"]
+== Static site generator
 
+[.lora]
+A [.mark]#"compiler"# that produces the blog output
 
-[%notitle,background-color="{bg1}"]
-== Code
+[%notitle,background-color="{bg1}",transition="none"]
+== AsciiDoc example
 
-[source,groovy]
+.An example of AsciiDoc file
+[source,asciidoc,role="small",subs="attributes"]
 ----
-package com.github.wololock
+I love https://sdkman.io/[*_SDKMAN!_*]. It made using multiple different Java distributions in a single operating system much more
+comfortable. You can install Java across different versions (from 6 to 13.EA) and different vendors (OpenJDK,
+Oracle, Zulu, Corretto or GraalVM CE to name a few). Switching between those versions is as simple as executing
+a single `sdk use java {version}` command and you are ready to use whatever Java you want. However, not all
+Java versions are available by default, but luckily, _SDKMAN!_ has a simple solution to this problem.
 
-import org.spockframework.runtime.extension.ExtensionAnnotation
+++++
+&lt;!-- more --&gt;
+++++
 
-import java.lang.annotation.ElementType
-import java.lang.annotation.Retention
-import java.lang.annotation.RetentionPolicy
-import java.lang.annotation.Target
+== Installing GraalVM EE 1.0.0-RC14
 
-@Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-@ExtensionAnnotation(RandomizedOrderExtension)
-@interface RandomizedOrder {}
+I run some experiments with https://www.graalvm.org/[GraalVM] and the only version I can install directly with
+_SDKMAN!_ is GraalVM Community Edition. However, there is also GraalVM Enterprise Edition which provides some
+additional features, like improved performance. The main reason GraalVM EE is not available in _SDKMAN!_ is
+that it is distributed over OTN (Oracle Technology Network) only, so you need to accept OTN license agreementfootnote:[https://www.oracle.com/technetwork/licenses/early-adopter-license-2299792.html]
+and log in to start the file download. OK, so I downloaded *graalvm-ee-1.0.0-rc14-linux-amd64.tar.gz* file
+successfully. What's next?
+
+Let's start with the extracting files from the downloaded archive.
+
+[source,bash]
+&dash;&dash;&dash;&dash;
+$ tar -xvf graalvm-ee-1.0.0-rc14-linux-amd64.tar.gz
+&dash;&dash;&dash;&dash;
+
+After extracting all files, we can install local Java distribution with the following command.
 ----
+
+[%notitle,background-color="{bg1}",transition="none"]
+== Generated HTML
+
+.Generated HTML file from AsciiDoc
+[source,html,role="small"]
+----
+<article role="main" class="blog-post">
+<div class="paragraph">
+    <p>I love <a href="https://sdkman.io/" target="_blank" rel="noopener"><strong><em>SDKMAN!</em></strong></a>. It made using multiple different Java distributions in a single operating system much more comfortable. You can install Java across different versions (from 6 to 13.EA) and different vendors (OpenJDK, Oracle, Zulu, Corretto or GraalVM CE to name a few). Switching between those versions is as simple as executing a single
+    <code>sdk use java {version}</code> command and you are ready to use whatever Java you want. However, not all Java versions are available by default, but luckily, <em>SDKMAN!</em> has a simple solution to this problem.
+    </p>
+</div>
+<a id="more"></a>
+<div class="sect1">
+    <h2>Installing GraalVM EE 1.0.0-RC14</h2>
+    <div class="sectionbody">
+        <div class="paragraph">
+            <p>I run some experiments with <a href="https://www.graalvm.org/" target="_blank" rel="noopener">GraalVM</a> and the only version I can install directly with <em>SDKMAN!</em> is GraalVM Community Edition. However, there is also GraalVM Enterprise Edition which provides some additional features, like improved performance.
+            The main reason GraalVM EE is not available in <em>SDKMAN!</em> is that it is distributed over OTN (Oracle Technology Network) only, so you need to accept OTN license agreement<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> and log in to start the file download. OK, so I downloaded <strong>graalvm-ee-1.0.0-rc14-linux-amd64.tar.gz</strong> file successfully. What&#8217;s next?</p></div><div class="paragraph"><p>Let&#8217;s start with the extracting files from the downloaded archive.
+            </p>
+        </div>
+        <div class="listingblock">
+            <div class="content">
+                <pre class="highlightjs highlight">
+                    <code class="language-bash hljs" data-lang="bash">$ tar -xvf graalvm-ee-1.0.0-rc14-linux-amd64.tar.gz</code>
+                </pre>
+            </div>
+        </div>
+        <div class="paragraph"><p>After extracting all files, we can install local Java distribution with the following command.</p></div>
+    </div>
+</div>
+</article>
+----
+
+[%notitle,transition="none"]
+== Generated blog post example
+
+image::generated-blog-post.png[background,cover]
+
+[%notitle,transition="none"]
+== Hexo
+
+image::hexo.png[background,cover]
+
+[transition="slide"]
+== Let's [.mark]#write# something!
+
+Demo time! icon:edit[]
+
+
+//[%notitle,background-color="{bg1}"]
+//== Code
+//
+//[source,groovy]
+//----
+//package com.github.wololock
+//
+//import org.spockframework.runtime.extension.ExtensionAnnotation
+//
+//import java.lang.annotation.ElementType
+//import java.lang.annotation.Retention
+//import java.lang.annotation.RetentionPolicy
+//import java.lang.annotation.Target
+//
+//@Retention(RetentionPolicy.RUNTIME)
+//@Target(ElementType.TYPE)
+//@ExtensionAnnotation(RandomizedOrderExtension)
+//@interface RandomizedOrder {}
+//----
 
 
 include::footer.adoc[]
