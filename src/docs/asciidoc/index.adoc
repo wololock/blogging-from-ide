@@ -9,6 +9,7 @@
 :highlightjs-theme: css/androidstudio.min.css
 :listing-caption: Listing
 :bg1: #666
+:bg2: #3D749C
 
 [.lora.small]
 ([.red]#*# or any text editor of your choice)
@@ -56,15 +57,21 @@ I blog @ https://e.printstacktrace.blog[e.printstacktrace.blog] +
 Continuous Delivery Architect @ image:upwork.jpg[height=32,role="upwork"] +
 icon:twitter[] @wololock
 
-== The [.mark]#basics#
+== The [.mark]#introduction#
 
 [.lora]
 What does it mean _"blogging from an IDE"?_
 
-== Everything is the [.mark]#source code#
+== Part 1: the [.mark]#source code#
 
 [.lora]
-...and we use [.mark]#Git# repository to store it
+**Everything** `icon:file-text-o[] icon:file-image-o[] icon:gears[]` is the source code...
+
+[%notitle,background-color="{bg2}"]
+== Git
+
+[.lora.large]
+\... and we use icon:github[role="black x-large"] to control it!
 
 [%notitle,background-color="{bg1}",transition="none"]
 == Blog template is a source code
@@ -230,9 +237,10 @@ image::generated-blog-post.png[background,cover]
 image::hexo.png[background,cover]
 
 [transition="slide"]
-== Let's [.mark]#write# something!
+== [.mark]#Demo#
 
-Demo time! icon:edit[]
+[.lora]
+Let's write a blog post!
 
 [%notitle,transition="none"]
 == StaticGen
@@ -243,6 +251,8 @@ image::static-gen.png[background,cover]
 == awesome-static-generators
 
 image::awesome-static-generators.png[background,cover]
+
+==
 
 
 //[%notitle,background-color="{bg1}"]

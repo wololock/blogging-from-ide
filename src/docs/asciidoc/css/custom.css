@@ -47,6 +47,10 @@
     color: #bd94db;
 }
 
+.black {
+    color: #222;
+}
+
 .fa-twitter {
     color: #61aeee;
 }
@@ -160,6 +164,14 @@
     top: -30px;
     left: -70px;
     z-index: 99;
+}
+
+.reveal .large {
+    font-size: 4rem;
+}
+
+.reveal .x-large {
+    font-size: 6rem;
 }
 
 .reveal pre {
