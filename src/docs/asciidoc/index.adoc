@@ -7,6 +7,7 @@
 :sourcedir: ../java
 :customcss: css/custom.css
 :highlightjs-theme: css/androidstudio.min.css
+:listing-caption: Listing
 :bg1: #666
 
 [.lora.small]
@@ -55,11 +56,95 @@ I blog @ https://e.printstacktrace.blog[e.printstacktrace.blog] +
 Continuous Delivery Architect @ image:upwork.jpg[height=32,role="upwork"] +
 icon:twitter[] @wololock
 
-== The +++<mark>basics</mark>+++
+== The [.mark]#basics#
 
+[.lora]
 What does it mean _"blogging from an IDE"?_
 
-== Source code
+== Everything is the [.mark]#source code#
+
+[.lora]
+...and we use [.mark]#Git# repository to store it
+
+[%notitle,background-color="{bg1}",transition="none"]
+== Blog template is a source code
+
+.Directory structure of the `themes/` folder
+[source,bash,subs="attributes,quotes"]
+----
+$ tree -L 3 themes
+**[.purple]#themes#**
+└── **[.purple]#mytheme#**
+    ├── **[.purple]#layout#**
+    │   ├── 404.jade
+    │   ├── archive.jade
+    │   ├── category.jade
+    │   ├── index.jade
+    │   ├── ...
+    │   ├── post.jade
+    │   └── tag.jade
+    └── **[.purple]#source#**
+        ├── **[.purple]#css#**
+        ├── **[.purple]#img#**
+        └── **[.purple]#js#**
+
+7 directories, 9 files
+----
+
+[%notitle,background-color="{bg1}",transition="none"]
+== Blog posts are source code
+
+.Directory structure of the `source/` folder
+[source,bash,subs="quotes"]
+----
+$ tree -L 4 -P "*.adoc" source
+**[.purple]#source#**
+├── 404.adoc
+├── **[.purple]#_drafts#**
+├── **[.purple]#_posts#**
+│   ├── ...
+│   ├── **[.purple]#2018#**
+│   │   └── ...
+│   └── **[.purple]#2019#**
+│       └── **[.purple]#04#**
+│           ├── debugging-teams-book-review.adoc
+│           ├── graalvm-heap-size-of-native-image-how-to-set-it.adoc
+│           └── spock-random-order-of-tests-how-to.adoc
+└── **[.purple]#privacy-policy#**
+    └── index.adoc
+
+22 directories, 42 files
+----
+
+[%notitle,background-color="{bg1}",transition="none"]
+== Blog configuration is a code
+
+.The content of `_config.yml` file
+[source,yaml]
+----
+# Date / Time format
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+theme: mytheme
+
+disqus_shortname: eprintstacktrace
+
+# Deployment
+deploy:
+  type: git
+  repo: git@github.com:wololock/wololock.github.io.git
+  branch: master
+
+all_minifier: true
+----
+
+
 
 [%notitle,background-color="{bg1}"]
 == Code

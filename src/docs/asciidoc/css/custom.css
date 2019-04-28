@@ -43,6 +43,10 @@
     color: red;
 }
 
+.purple {
+    color: #bd94db;
+}
+
 .fa-twitter {
     color: #61aeee;
 }
@@ -129,6 +133,14 @@
 .reveal mark,
 .reveal .mark {
     background: #ffcd00;
+    color: #444;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.reveal div.title {
+    text-align: left;
+    font-size: 1.15rem;
 }
 
 .reveal section img {
@@ -165,6 +177,12 @@
 
 .reveal code {
     font-family: 'Ubuntu Mono', monospace;
+}
+
+.reveal code:not(.hljs) {
+    background: #ebf2f6;
+    color: #4271ae;
+    padding: 2px 4px;
 }
 
 .reveal pre code {
