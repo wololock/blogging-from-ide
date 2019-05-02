@@ -242,6 +242,11 @@ image::hexo.png[background,cover]
 [.lora]
 Let's write a blog post!
 
+== Which [.mark]#static site generator# to choose?
+
+[.lora]
+Is Hexo worth considering?
+
 [%notitle,transition="none"]
 == StaticGen
 
@@ -251,6 +256,14 @@ image::static-gen.png[background,cover]
 == awesome-static-generators
 
 image::awesome-static-generators.png[background,cover]
+
+== Let's summarize
+
+[.lora.text-left.margin-left-150.animation-slide-right]
+icon:check[role="green"] Git [.mark]#*source code*# repository created +
+icon:check[role="green"] File format chosen _(Markdown, AsciiDoc, ...)_ +
+icon:check[role="green"] Static site [.mark]#*generator*# chosen +
+icon:check[role="green"] A few first blog posts [.mark]#*written*#
 
 == Part 2: the [.mark]#deployment#
 
