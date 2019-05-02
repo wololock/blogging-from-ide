@@ -267,6 +267,55 @@ icon:check[role="green"] A few first blog posts [.mark]#*written*#
 
 == Part 2: the [.mark]#deployment#
 
+[%notitle,transition="none"]
+== Github Pages - Cover
+
+image::github-pages.png[background,cover]
+
+[%notitle,transition="none"]
+== Github Pages - Repository
+
+image::github-pages-master.png[background,cover]
+
+[%notitle,background-color="{bg1}",transition="none"]
+== Github Pages - Deployment configuration
+
+.The deployment configuration in Hexo's `_config.yml` file
+[source,yaml]
+----
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:wololock/wololock.github.io.git
+  branch: master
+----
+
+[%notitle,background-color="{bg1}",transition="none"]
+== Github Pages - The Deployment
+
+.Executing the deployment command
+[source,bash,subs="quotes"]
+----
+$ *hexo deploy*
+
+Cloning into '.deploy_git'...
+...
+...
+[master 90a80bb] Site updated: 2019-04-16 14:12:17
+ 167 files changed, 192 insertions(+), 192 deletions(-)
+ rewrite 404.html (63%)
+ rewrite debugging-teams-book-review/index.html (87%)
+ create mode 100644 images/og/debugging-teams2.jpg
+To https://github.com/wololock/wololock.github.io.git
+   4ac249a..90a80bb  HEAD -> master
+INFO  Deploy done: git
+----
+
+
+
+
+
 == Part 3: living on [.mark]#production#
 
 
