@@ -240,12 +240,12 @@ image::hexo.png[background,cover]
 == [.mark]#Demo#
 
 [.lora]
-Let's write a blog post!
+Let's write a blog post! 😃
 
-== Which [.mark]#static site generator# to choose?
+== Which [.mark]#static site generator# is worth considering?
 
 [.lora]
-Is Hexo worth considering?
+Is `Hexo` the right choice for me?
 
 [%notitle,transition="none"]
 == StaticGen
