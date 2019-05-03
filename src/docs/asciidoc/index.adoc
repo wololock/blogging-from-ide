@@ -260,10 +260,15 @@ image::awesome-static-generators.png[background,cover]
 == Let's summarize
 
 [.lora.text-left.margin-left-150.animation-slide-right]
-icon:check[role="green"] Git [.mark]#*source code*# repository created +
-icon:check[role="green"] File format chosen _(Markdown, AsciiDoc, ...)_ +
-icon:check[role="green"] Static site [.mark]#*generator*# chosen +
-icon:check[role="green"] A few first blog posts [.mark]#*written*#
+--
+icon:check[role="green"] Create [.mark]**Git** repository to store the [.mark]**source code**
+
+icon:check[role="green"] Pick your favorite format _(`.md`, `.adoc`, etc.)_
+
+icon:check[role="green"] Pick the [.mark]**static site generator** of your preference
+
+icon:check[role="green"] [.mark]**Write** a few first blog posts!
+--
 
 == Part 2: the [.mark]#deployment#
 
