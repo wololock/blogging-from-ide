@@ -369,7 +369,7 @@ deploy:
 
 [.lora.text-left.margin-left-150.animation-slide-right]
 icon:check[role="green"] You can publish blog posts from [.mark]#*anywhere*# +
-icon:check[role="green"] Automated and [.mark]#*recoverable*# environment
+icon:check[role="green"] Automated and [.mark]#*recoverable*# deployment
 
 
 == Part 3: living on [.mark]#production#
