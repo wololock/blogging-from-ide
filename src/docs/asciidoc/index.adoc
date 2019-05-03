@@ -1,4 +1,4 @@
-= Running developer's +++<mark>blog</mark>+++ directly from an IDE+++<sup class="red">*</sup>+++
+= Running developer's [.mark]#blog# directly from an IDE[.red]^*^
 :event-name: GR8Conf EU 2019, May 27th - 29th // #GR8Conf
 :event-logo: gr8conf-2019.svg
 :twitter: @wololock
@@ -49,7 +49,7 @@ image::wololock.jpg[scaledwidth=20%]
 
 [.lora.animation-slide-bottom.text-left.margin-left-200.font-3rem]
 _Hello, my name is_ +
-_+++<mark><b>Szymon Stepniak</b></mark>+++_
+_[.mark]**Szymon Stepniak**_
 
 
 [.animation-slide-right.text-left.margin-left-200.margin-top-30]
@@ -312,7 +312,7 @@ To https://github.com/wololock/wololock.github.io.git
 INFO  Deploy done: git
 ----
 
-== What about [.mark]#CICD#+++<sup class="red">*</sup>+++?
+== What about [.mark]#CICD#[.red]^*^?
 
 [.lora]
 Deploy on *commit*. From *anywhere*.
