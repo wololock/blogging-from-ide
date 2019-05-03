@@ -320,7 +320,7 @@ INFO  Deploy done: git
 == What about [.mark]#CICD#[.red]^*^?
 
 [.lora]
-Deploy on *commit*. From *anywhere*.
+Deploy on *commit* and *push*. From *anywhere*.
 
 [.small]
 ([.red]#*# continuous integration and continuous deployment)
@@ -373,8 +373,11 @@ deploy:
 == But the benefits are...
 
 [.lora.text-left.margin-left-150.animation-slide-right]
-icon:check[role="green"] You can publish blog posts from [.mark]#*anywhere*# +
-icon:check[role="green"] Automated and [.mark]#*recoverable*# deployment
+--
+icon:check[role="green"] [.mark]**Automated** deployment _(commit, push & go)_
+
+icon:check[role="green"] You can publish blog posts from [.mark]**anywhere**
+--
 
 
 == Part 3: living on [.mark]#production#
