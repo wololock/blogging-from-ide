@@ -402,6 +402,10 @@ image::cloudflare-diagram-02.png[]
 
 == !
 
+image::cloudflare-00.png[background,cover]
+
+== !
+
 image::cloudflare-01.png[background,cover]
 
 == !
@@ -422,12 +426,12 @@ image::cloudflare-05a.png[background,cover]
 
 == URL format [.mark]#matters#
 
-[.text-left.smaller]
+[.text-left.smaller.monospace]
 icon:globe[role="grey"] [.grey]#https://#+++e.printstacktrace.blog+++[.grey]#/2019/04/graalvm-and-groovy-how-to-start/#
 
 == URL format [.mark]#matters#
 
-[.text-left.smaller]
+[.text-left.smaller.monospace]
 icon:globe[role="grey"] [.grey]#https://#+++e.printstacktrace.blog+++[.grey]#/graalvm-and-groovy-how-to-start/#
 
 [background-color="{bg1}", transition="none"]

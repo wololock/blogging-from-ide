@@ -39,6 +39,10 @@
     }
 }
 
+.white {
+    color: #fcfcfc;
+}
+
 .red {
     color: red;
 }
@@ -60,13 +64,16 @@
 }
 
 .grey {
-    color: #a5a5a5;
+    color: #7f7f7f;
 }
 
 .smaller {
-    font-size: 0.88em;
+    font-size: 0.81em;
 }
 
+.monospace {
+    font-family: 'Ubuntu Mono', monospace;
+}
 
 
 .reveal {
