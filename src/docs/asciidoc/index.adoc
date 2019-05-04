@@ -382,7 +382,15 @@ icon:check[role="green"] You can publish blog posts from [.mark]**anywhere**
 
 == Part 3: living on [.mark]#production#
 
+== A static HTML [line-through]_does_ doesn't require a [.mark]#sophisticated# web server
 
+[.lora]
+Is there anything we should be worry about?
+
+[%notitle,transition="none"]
+== Cloudflare intro
+
+image::cloudflare.png[background,cover]
 
 
 //[%notitle,background-color="{bg1}"]

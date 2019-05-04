@@ -182,6 +182,12 @@
     font-size: 6rem;
 }
 
+.reveal .line-through {
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+    color: #333;
+}
+
 .reveal pre {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 1.5rem;
