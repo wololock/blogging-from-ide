@@ -98,8 +98,12 @@
     margin-top: 30px;
 }
 
+.reveal .margin-top-60 {
+    margin-top: 60px;
+}
+
 .reveal a {
-    color: #61aeee;
+    color: #518cc1;
 }
 
 .reveal .font-3rem {

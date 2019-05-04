@@ -259,7 +259,7 @@ image::awesome-static-generators.png[background,cover]
 
 == Let's summarize
 
-[.lora.text-left.margin-left-150.animation-slide-right]
+[.lora.text-left.margin-left-100.animation-slide-right]
 --
 icon:check[role="green"] Create [.mark]**Git** repository to store the [.mark]**source code**
 
@@ -480,7 +480,7 @@ icon:check[role="green"] Web traffic [.mark]*analytics*
 --
 
 [.lora.animation-slide-left]
-\... and much more
+\... and *much more*
 
 
 
@@ -504,5 +504,26 @@ icon:check[role="green"] Web traffic [.mark]*analytics*
 //@interface RandomizedOrder {}
 //----
 
+[.stretch.whoami]
+== Thank you!
+
+[.author.animation-slide-left]
+image::wololock.jpg[scaledwidth=20%]
+
+[.lora.animation-slide-bottom.text-left.margin-left-200.font-3rem]
+--
+_That's all, folks!_
+
+Do you have any [.mark]*questions*?
+--
+
+
+[.lora.animation-slide-right.text-left.margin-left-200.margin-top-60]
+--
+[.mark]*Handout*, slides, and all materials are available:
+
+[.smaller]
+*https://github.com/wololock/blogging-from-ide-slides*
+--
 
 include::footer.adoc[]
