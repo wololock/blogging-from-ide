@@ -394,6 +394,14 @@ image::cloudflare.png[background,cover]
 
 == !
 
+image::cloudflare-diagram-01.png[]
+
+== !
+
+image::cloudflare-diagram-02.png[]
+
+== !
+
 image::cloudflare-01.png[background,cover]
 
 == !
