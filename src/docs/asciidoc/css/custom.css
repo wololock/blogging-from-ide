@@ -59,6 +59,16 @@
     color: #61aeee;
 }
 
+.grey {
+    color: #a5a5a5;
+}
+
+.smaller {
+    font-size: 0.88em;
+}
+
+
+
 .reveal {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 2rem;
@@ -74,6 +84,10 @@
 
 .reveal .margin-left-200 {
     margin-left: 200px;
+}
+
+.reveal .margin-left-100 {
+    margin-left: 100px;
 }
 
 .reveal .margin-left-150 {
