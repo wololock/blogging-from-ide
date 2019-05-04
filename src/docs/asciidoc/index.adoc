@@ -57,10 +57,10 @@ I blog @ https://e.printstacktrace.blog[e.printstacktrace.blog] +
 Continuous Delivery Architect @ image:upwork.jpg[height=32,role="upwork"] +
 icon:twitter[] @wololock
 
-== The [.mark]#introduction#
+== What does "blogging [.mark]**from IDE**" exactly mean?
 
 [.lora]
-What does it mean _"blogging from an IDE"?_
+Let's explore the main ingredients
 
 == Part 1: the [.mark]#source code#
 
