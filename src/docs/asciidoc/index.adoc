@@ -265,9 +265,9 @@ icon:check[role="green"] Create [.mark]**Git** repository to store the [.mark]**
 
 icon:check[role="green"] Pick your favorite format _(`.md`, `.adoc`, etc.)_
 
-icon:check[role="green"] Pick the [.mark]**static site generator** of your preference
-
 icon:check[role="green"] [.mark]**Write** a few first blog posts!
+
+icon:check[role="green"] Pick the [.mark]**static site generator** of your preference
 --
 
 == Part 2: the [.mark]#deployment#
