@@ -10,6 +10,7 @@
 :listing-caption: Listing
 :bg1: #666
 :bg2: #3D749C
+:slide-with-code: %notitle,background-color="{bg1}",transition="none",background-transition="none"
 
 [.lora.small]
 ([.red]#*# or any text editor of your choice)
@@ -73,7 +74,7 @@ Let's explore the main ingredients
 [.lora.large]
 \... and we use icon:github[role="black x-large"] to control it!
 
-[%notitle,background-color="{bg1}",transition="none"]
+[{slide-with-code}]
 == Blog template is a source code
 
 .Directory structure of the `themes/` folder
@@ -98,7 +99,7 @@ $ tree -L 3 themes
 7 directories, 9 files
 ----
 
-[%notitle,background-color="{bg1}",transition="none"]
+[{slide-with-code}]
 == Blog posts are source code
 
 .Directory structure of the `source/` folder
@@ -123,7 +124,7 @@ $ tree -L 4 -P "*.adoc" source
 22 directories, 42 files
 ----
 
-[%notitle,background-color="{bg1}",transition="none"]
+[{slide-with-code}]
 == Blog configuration is a code
 
 .The content of `_config.yml` file
@@ -157,7 +158,7 @@ all_minifier: true
 [.lora]
 A [.mark]#"compiler"# that produces the blog output
 
-[%notitle,background-color="{bg1}",transition="none"]
+[{slide-with-code}]
 == AsciiDoc example
 
 .An example of AsciiDoc file
@@ -192,7 +193,7 @@ $ tar -xvf graalvm-ee-1.0.0-rc14-linux-amd64.tar.gz
 After extracting all files, we can install local Java distribution with the following command.
 ----
 
-[%notitle,background-color="{bg1}",transition="none"]
+[{slide-with-code}]
 == Generated HTML
 
 .Generated HTML file from AsciiDoc
@@ -282,7 +283,7 @@ image::github-pages.png[background,cover]
 
 image::github-pages-master.png[background,cover]
 
-[%notitle,background-color="{bg1}",transition="none"]
+[{slide-with-code}]
 == Github Pages - Deployment configuration
 
 .The deployment configuration in Hexo's `_config.yml` file
@@ -296,7 +297,7 @@ deploy:
   branch: master
 ----
 
-[%notitle,background-color="{bg1}",transition="none"]
+[{slide-with-code}]
 == Github Pages - The Deployment
 
 .Executing the deployment command
@@ -330,7 +331,7 @@ Deploy on *commit* and *push*. From *anywhere*.
 
 image::travis.png[background,cover]
 
-[%notitle,background-color="{bg1}",transition="none"]
+[{slide-with-code}]
 == Travis config
 
 .The content of `.travis.yml` file
@@ -434,7 +435,7 @@ icon:globe[role="grey"] [.grey]#https://#+++e.printstacktrace.blog+++[.grey]#/20
 [.text-left.smaller.monospace]
 icon:globe[role="grey"] [.grey]#https://#+++e.printstacktrace.blog+++[.grey]#/graalvm-and-groovy-how-to-start/#
 
-[background-color="{bg1}", transition="none"]
+[{slide-with-code}]
 == !
 
 .Permlink configuration in Hexo's `_config.yml`
@@ -446,7 +447,7 @@ root: /
 **permalink: :year/:month/:title/**
 ----
 
-[background-color="{bg1}", transition="none"]
+[{slide-with-code}]
 == !
 
 .Permlink configuration in Hexo's `_config.yml`
@@ -494,27 +495,6 @@ icon:check[role="green"] Web traffic [.mark]*analytics*
 [.lora.animation-slide-left]
 \... and *much more*
 
-
-
-//[%notitle,background-color="{bg1}"]
-//== Code
-//
-//[source,groovy]
-//----
-//package com.github.wololock
-//
-//import org.spockframework.runtime.extension.ExtensionAnnotation
-//
-//import java.lang.annotation.ElementType
-//import java.lang.annotation.Retention
-//import java.lang.annotation.RetentionPolicy
-//import java.lang.annotation.Target
-//
-//@Retention(RetentionPolicy.RUNTIME)
-//@Target(ElementType.TYPE)
-//@ExtensionAnnotation(RandomizedOrderExtension)
-//@interface RandomizedOrder {}
-//----
 
 [.stretch.whoami]
 == Thank you!
