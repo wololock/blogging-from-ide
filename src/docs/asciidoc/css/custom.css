@@ -39,12 +39,98 @@
     }
 }
 
+@keyframes blinking {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+@keyframes showup {
+    from, to { opacity: 0; }
+    99% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blinking {
+    animation: blinking 0.8s step-end infinite;
+}
+
+.reveal section.present:not(.stack) .delay-100ms {
+    animation: 100ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-200ms {
+    animation: 200ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-300ms {
+    animation: 300ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-400ms {
+    animation: 400ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-500ms {
+    animation: 500ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-600ms {
+    animation: 600ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-700ms {
+    animation: 700ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-800ms {
+    animation: 800ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-900ms {
+    animation: 900ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-1000ms {
+    animation: 1000ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-1100ms {
+    animation: 1100ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-1200ms {
+    animation: 1200ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-1300ms {
+    animation: 1300ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-1400ms {
+    animation: 1400ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-1500ms {
+    animation: 1500ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-2000ms {
+    animation: 2000ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-2300ms {
+    animation: 2300ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-2500ms {
+    animation: 2500ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-3000ms {
+    animation: 3000ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-965ms {
+    animation: 965ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-1395ms {
+    animation: 1395ms ease-out 0s 1 showup;
+}
+.reveal section.present:not(.stack) .delay-1744ms {
+    animation: 1744ms ease-out 0s 1 showup;
+}
+
 .white {
     color: #fcfcfc;
 }
 
 .red {
     color: red;
+}
+
+.yellow {
+    color: #ffd405;
 }
 
 .purple {
@@ -56,7 +142,15 @@
 }
 
 .green {
-    color: #459140;
+    color: #3ab244;
+}
+
+.light-green {
+    color: #02ce3e;
+}
+
+.turquoise {
+    color: #1cd9e0;
 }
 
 .fa-twitter {
@@ -67,8 +161,54 @@
     color: #7f7f7f;
 }
 
+.color-graal-1 {
+    color: #00758f;
+}
+
+.color-graal-2 {
+    color: #f29111;
+}
+
+.orange {
+    color: orange;
+}
+
+
+.bg-dark {
+    background: #666;
+}
+
 .smaller {
     font-size: 0.81em;
+}
+
+.reveal .cli-output {
+    opacity: 0.6;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.reveal .xs {
+    font-size: 0.6em;
+}
+
+.reveal .xxs {
+    font-size: 0.21em;
+}
+
+.reveal .smaller-text {
+    font-size: 0.8em;
+    line-height: 0.6em;
+}
+
+.reveal strong.light {
+    border: 3px solid red;
+}
+
+.reveal .nobullets ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .monospace {
@@ -171,8 +311,8 @@
 .reveal .mark {
     background: #ffcd00;
     color: #444;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .reveal div.title {
@@ -199,6 +339,10 @@
     z-index: 99;
 }
 
+.reveal .larger {
+    font-size: 2.3rem;
+}
+
 .reveal .large {
     font-size: 4rem;
 }
@@ -211,6 +355,10 @@
     text-decoration-line: line-through;
     text-decoration-color: red;
     color: #333;
+}
+
+.reveal code .line-through {
+    color: inherit;
 }
 
 .reveal pre {
@@ -233,6 +381,7 @@
 
 .reveal code {
     font-family: 'Ubuntu Mono', monospace;
+    height: 700px;
 }
 
 .reveal code:not(.hljs) {
@@ -247,7 +396,12 @@
     overflow: auto;
     max-height: 400px;
     word-wrap: normal;
+    overflow: hidden;
 }
+
+/*.reveal pre code strong {
+    background: #393d40;
+}*/
 
 .reveal pre::before {
     background-color: #d8d8da;
@@ -263,7 +417,8 @@
 }
 
 .reveal pre code {
-    background-color: #282c34;
+    /*background-color: #282c34;*/
+    /*background-color: #fafafa;*/
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     max-height: 600px;
@@ -374,4 +529,18 @@
     position: absolute;
     left: 20px;
     bottom: 20px;
+}
+
+@media all and (max-width: 1024px) {
+    .reveal pre {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
+}
+
+@media print {
+    .reveal pre {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
 }
