@@ -1,34 +1,134 @@
-== Part 2: the [.mark]#deployment#
+== The [.mark]#deployment#
+
+[.lora]
+Publishing generated blog online
+
+`icon:globe[] icon:cloud[] icon:upload[]`
 
 [%notitle,transition="none"]
-== Github Pages - Cover
+=== Github Pages - Cover
 
 image::github-pages.png[background,cover]
 
 [%notitle,transition="none"]
-== Github Pages - Repository
+=== Github Pages - Repository
 
 image::github-pages-master.png[background,cover]
 
 [{slide-with-code}]
-== Github Pages - Deployment configuration
+=== Github Pages - Deployment configuration
 
-.The deployment configuration in Hexo's `_config.yml` file
-[source,yaml]
+[source,pf,subs="{subs}"]
 ----
+# fragment of _config.yml file
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repo: git@github.com:wololock/wololock.github.io.git
-  branch: master
+[.orange]*deploy*:
+  [.orange]*type*: git
+  [.orange]*repo*: git@github.com:wololock/wololock.github.io.git
+  [.orange]*branch*: master
+----
+
+
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ {cur2}
 ----
 
 [{slide-with-code}]
-== Github Pages - The Deployment
+=== !
 
-.Executing the deployment command
-[source,bash,subs="quotes"]
+[source,bash,subs="{subs}"]
+----
+$ *hexo*{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ *hexo deploy*{cur2}
+----
+
+
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ *hexo deploy*
+
+[.delay-200ms]#Cloning into '.deploy_git'...#
+[.delay-400ms]#...#
+[.delay-700ms]#...#
+[.delay-1200ms]#[master 90a80bb] Site updated: 2019-04-16 14:12:17
+ 167 files changed, 192 insertions(+), 192 deletions(-)
+ rewrite 404.html (63%)
+ rewrite debugging-teams-book-review/index.html (87%)
+ create mode 100644 images/og/debugging-teams2.jpg
+To https://github.com/wololock/wololock.github.io.git
+   4ac249a..90a80bb  HEAD -> master#
+[.delay-1500ms]#INFO  Deploy done: git
+
+$ {cur2}#
+----
+
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ *hexo deploy*
+
+Cloning into '.deploy_git'...
+...
+...
+[.mark]##[master 90a80bb] Site updated: 2019-04-16 14:12:17##
+ 167 files changed, 192 insertions(+), 192 deletions(-)
+ rewrite 404.html (63%)
+ rewrite debugging-teams-book-review/index.html (87%)
+ create mode 100644 images/og/debugging-teams2.jpg
+To https://github.com/wololock/wololock.github.io.git
+   4ac249a..90a80bb  HEAD -> master
+INFO  Deploy done: git
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ *hexo deploy*
+
+Cloning into '.deploy_git'...
+...
+...
+[master 90a80bb] Site updated: 2019-04-16 14:12:17
+[.mark]## 167 files changed, 192 insertions(+), 192 deletions(-)
+ rewrite 404.html (63%)
+ rewrite debugging-teams-book-review/index.html (87%)
+ create mode 100644 images/og/debugging-teams2.jpg##
+To https://github.com/wololock/wololock.github.io.git
+   4ac249a..90a80bb  HEAD -> master
+INFO  Deploy done: git
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
 ----
 $ *hexo deploy*
 
@@ -41,68 +141,114 @@ Cloning into '.deploy_git'...
  rewrite debugging-teams-book-review/index.html (87%)
  create mode 100644 images/og/debugging-teams2.jpg
 To https://github.com/wololock/wololock.github.io.git
-   4ac249a..90a80bb  HEAD -> master
+[.mark]##   4ac249a..90a80bb  HEAD -> master##
 INFO  Deploy done: git
+
+$ {cur2}
 ----
 
-== What about [.mark]#CICD#[.red]^*^?
+
+
+=== What about [.mark]#automated# deployments?
 
 [.lora]
-Deploy on *commit* and *push*. From *anywhere*.
-
-[.small]
-([.red]#*# continuous integration and continuous deployment)
+Deploy on *commit* and [.mark]*push* `icon:code-fork[]`. From [.mark]*anywhere* `icon:globe[]`.
 
 [%notitle,transition="none"]
-== Travis
+=== Travis
 
 image::travis.png[background,cover]
 
 [{slide-with-code}]
-== Travis config
+=== !
 
-.The content of `.travis.yml` file
-[source,yml,role="small"]
+[source,bash,subs="{subs}"]
 ----
-language: node_js
+$ {cur2}
+----
 
-node_js:
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ *vim*{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ *vim .travis.yml*{cur2}
+----
+
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+[.orange]*language*: node_js
+
+[.orange]*node_js*:
 - "6"
 
-branches:
-  only:
+[.orange]*branches*:
+  [.orange]*only*:
   - develop
 
-before_install:
+[.orange]*before_install*:
 - npm install hexo-cli -g
 - npm install hexo --save
 - npm install
 
-before_script:
+[.orange]*before_script*:
 - git config --global user.name 'Travis CI'
 - git config --global user.email 'bot@travis-ci.org'
 - sed -i'' "s~git@github.com:wololock/wololock.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/wololock/wololock.github.io.git~" _config.yml
 
-script:
+[.orange]*script*:
 - hexo generate
 
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: sh deploy.sh
-  on:
-    branch: develop
 ----
 
-== Do I need it?
 
-== Nope
+[{slide-with-code}]
+=== !
 
-== But the benefits are...
+[source,bash,subs="{subs}"]
+----
+[.orange]*before_script*:
+- git config --global user.name 'Travis CI'
+- git config --global user.email 'bot@travis-ci.org'
+- sed -i'' "s~git@github.com:wololock/wololock.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/wololock/wololock.github.io.git~" _config.yml
 
-[.lora.text-left.margin-left-150.animation-slide-right]
---
-icon:check[role="green"] [.mark]**Automated** deployment _(commit, push & go)_
+[.orange]*script*:
+- hexo generate
 
-icon:check[role="green"] You can publish blog posts from [.mark]**anywhere**
---
+[.orange]*deploy*:
+  [.orange]*skip_cleanup*: true
+  [.orange]*provider*: script
+  [.orange]*script*: sh deploy.sh
+  [.orange]*on*:
+    [.orange]*branch*: develop
+{cur2}
+[.purple]#~
+~
+~
+~#
+.travis.yml
+----
+
+=== Do I [.mark]#need# it?
+
+=== Nope
+
+=== However, it is [.mark]#worth# considering
+
+[%step,role="lora nobullets"]
+* icon:check[role="green"] You just commit, [.mark]*push*, and CI server deploys for you
+* icon:check[role="green"] You can publish new blog posts from [.mark]*anywhere*
+* icon:times-circle[role="red"] Deploying from CI server might be slower
+
