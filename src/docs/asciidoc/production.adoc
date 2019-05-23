@@ -1,113 +1,119 @@
-== Part 3: living on [.mark]#production#
+== Living on [.mark]#production#
 
-== A static HTML [line-through]_does_ doesn't require a [.mark]#sophisticated# web server
+[.lora]
+Improving blog's reliability and availability
+
+`icon:bar-chart[] icon:dashboard[] icon:sitemap[]`
+
+=== A static HTML [line-through]_does_ doesn't require a [.mark]#sophisticated# web server
 
 [.lora]
 Is there anything we should be worry about?
 
 [%notitle,transition="none"]
-== Cloudflare intro
+=== Cloudflare intro
 
 image::cloudflare.png[background,cover]
 
-== !
+=== !
 
 image::cloudflare-diagram-01.png[]
 
-== !
+=== !
 
 image::cloudflare-diagram-02.png[]
 
-== !
+=== !
 
 image::cloudflare-00.png[background,cover]
 
-== !
+=== !
 
 image::cloudflare-01.png[background,cover]
 
-== !
+=== !
 
 image::cloudflare-02.png[background,cover]
 
-== !
+=== !
 
 image::cloudflare-03.png[background,cover]
 
-== !
+=== !
 
 image::cloudflare-04.png[background,cover]
 
-== !
+=== !
 
 image::cloudflare-05a.png[background,cover]
 
-== URL format [.mark]#matters#
+=== URL format [.mark]#matters#
 
 [.text-left.smaller.monospace]
 icon:globe[role="grey"] [.grey]#https://#+++e.printstacktrace.blog+++[.grey]#/2019/04/graalvm-and-groovy-how-to-start/#
 
-== URL format [.mark]#matters#
+=== URL format [.mark]#matters#
 
 [.text-left.smaller.monospace]
 icon:globe[role="grey"] [.grey]#https://#+++e.printstacktrace.blog+++[.grey]#/graalvm-and-groovy-how-to-start/#
 
 [{slide-with-code}]
-== !
+=== !
 
-.Permlink configuration in Hexo's `_config.yml`
-[source,yaml,subs="quotes"]
+[source,bash,subs="{subs}"]
 ----
 # URL
-url: https://e.printstacktrace.blog
-root: /
-**permalink: :year/:month/:title/**
+[.orange]*url*: https://e.printstacktrace.blog
+[.orange]*root*: /
+[.orange]*permalink*: :year/:month/:title/
 ----
 
 [{slide-with-code}]
-== !
+=== !
 
-.Permlink configuration in Hexo's `_config.yml`
-[source,yaml,subs="quotes"]
+[source,bash,subs="{subs}"]
 ----
 # URL
-url: https://e.printstacktrace.blog
-root: /
-**permalink: :title/**
+[.orange]*url*: https://e.printstacktrace.blog
+[.orange]*root*: /
+[.orange]*permalink*: [.mark]#:year/:month/#:title/
 ----
 
-== Problem: [.mark]*broken* indexed links
+[{slide-with-code}]
+=== !
 
-[.lora]
-It took Google a few days to re-index all pages.
+[source,bash,subs="{subs}"]
+----
+# URL
+[.orange]*url*: https://e.printstacktrace.blog
+[.orange]*root*: /
+[.orange]*permalink*: :title/
+----
+
+=== Problem: [.mark]*broken* links remain indexed
+
 
 [%notitle,transition="none"]
-== Links from GraalVM
+=== Links from GraalVM
 
 image::graalvm-links.png[background,cover]
 
-== !
+=== !
 
 image::cloudflare-05b.png[background,cover]
 
-== !
+=== !
 
 image::cloudflare-06.png[background,cover]
 
-== Cloudflare offers you...
+=== Cloudflare offers you...
 
-[.lora.text-left.margin-left-100.animation-slide-right]
---
-icon:check[role="green"] SSL + [.mark]*HTTP/2* _(for better performance)_
+[%step,role="lora nobullets"]
+* icon:check[role="green"] SSL + [.mark]*HTTP/2* _(for better performance)_
+* icon:check[role="green"] [.mark]*Caching* + global CDN
+* icon:check[role="green"] Page Rules _(a very limited alternative for [.mark]*mod_rewrite*)_
+* icon:check[role="green"] Firewall
+* icon:check[role="green"] Web traffic [.mark]*analytics*
 
-icon:check[role="green"] [.mark]*Caching* + global CDN
-
-icon:check[role="green"] Page Rules _(a very limited alternative for [.mark]*mod_rewrite*)_
-
-icon:check[role="green"] Firewall
-
-icon:check[role="green"] Web traffic [.mark]*analytics*
---
-
-[.lora.animation-slide-left]
-\... and *much more*
+[%step,role="lora nobullets"]
+* ... and *much more*
