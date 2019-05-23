@@ -1,0 +1,491 @@
+== The [.mark]#source code#
+
+[.lora]
+*Blog as a code* means that everything is a source code...
+
+`icon:file-text-o[] icon:file-image-o[] icon:gears[]`
+
+[%notitle,background-color="{bg2}"]
+=== Git
+
+[.lora.large]
+\... and we use icon:github[role="black x-large"] to version it!
+
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -a{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -a -L 1{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -a -L 1 .{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -a -L 1 .
+.
+├── [.purple]*cache*
+├── _config.yml
+├── [.green]*deploy.sh*
+├── [.purple]*.git*
+├── .gitignore
+├── [.purple]*node_modules*
+├── package.json
+├── README.md
+├── [.purple]*scaffolds*
+├── [.purple]*scripts*
+├── .snyk
+├── [.purple]*source*
+├── [.purple]*themes*
+├── .travis.yml
+└── wololock.github.io.iml
+
+7 directories, 8 files
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 3{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 3 themes{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 3 themes
+[.purple]*themes*
+└── [.purple]*mytheme*
+    ├── _config.yml
+    ├── [.purple]*layout*
+    │   ├── 404.jade
+    │   ├── archive.jade
+    │   ├── category.jade
+    │   ├── clean.jade
+    │   ├── index.jade
+    │   ├── page.jade
+    │   ├── [.purple]*partial*
+    │   ├── post.jade
+    │   └── tag.jade
+    └── [.purple]*source*
+        ├── [.purple]*css*
+        ├── [.purple]*img*
+        └── [.purple]*js*
+
+7 directories, 9 files
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 3 themes
+[.purple]*themes*
+└── [.purple]*mytheme*
+    ├── _config.yml
+    ├── [.purple]*layout*
+    │   ├── [.mark]#404.jade#
+    │   ├── [.mark]#archive.jade#
+    │   ├── [.mark]#category.jade#
+    │   ├── [.mark]#clean.jade#
+    │   ├── [.mark]#index.jade#
+    │   ├── [.mark]#page.jade#
+    │   ├── [.purple]*partial*
+    │   ├── [.mark]#post.jade#
+    │   └── [.mark]#tag.jade#
+    └── [.purple]*source*
+        ├── [.purple]*css*
+        ├── [.purple]*img*
+        └── [.purple]*js*
+
+7 directories, 9 files
+
+$ {cur2}
+----
+
+
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 3 themes
+[.purple]*themes*
+└── [.purple]*mytheme*
+    ├── _config.yml
+    ├── [.purple]*layout*
+    │   ├── 404.jade
+    │   ├── archive.jade
+    │   ├── category.jade
+    │   ├── clean.jade
+    │   ├── index.jade
+    │   ├── page.jade
+    │   ├── [.purple]*partial*
+    │   ├── post.jade
+    │   └── tag.jade
+    └── [.purple]*source*
+        ├── [.purple.mark]*css*
+        ├── [.purple.mark]*img*
+        └── [.purple.mark]*js*
+
+7 directories, 9 files
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 4{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 4 --matchdirs{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 4 --matchdirs -P "*.adoc"{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 4 --matchdirs -P "\*.adoc" -P "*2019/0[3,4]*"{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 4 --matchdirs -P "\*.adoc" -P "*2019/0[3,4]*" --prune{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 4 --matchdirs -P "\*.adoc" -P "*2019/0[3,4]*" --prune source/{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 4 --matchdirs -P "\*.adoc" -P "*2019/0[3,4]*" --prune source/
+[.purple]*source*
+└── [.purple]*_posts*
+    └── [.purple]*2019*
+        ├── [.purple]*03*
+        │   ├── groovy-regular-expressions-the-definitive-guide.adoc
+        │   ├── installing-graalvm-ee-1-0-0-rc14-with-sdkman.adoc
+        │   ├── intellij-idea-git-gpg-failed-to-sign-the-data.adoc
+        │   ├── pragmatic-thinking-and-learning-book-review.adoc
+        │   └── release-it-2nd-edition-book-review.adoc
+        └── [.purple]*04*
+            ├── debugging-teams-book-review.adoc
+            ├── graalvm-heap-size-of-native-image-how-to-set-it.adoc
+            ├── spock-random-order-of-tests-how-to.adoc
+            └── using-the-same-prefix-with-different-http-methods-in-ratpack.adoc
+
+4 directories, 9 files
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -L 4 --matchdirs -P "\*.adoc" -P "*2019/0[3,4]*" --prune source/
+[.purple]*source*
+└── [.purple]*_posts*
+    └── [.purple]*2019*
+        ├── [.purple]*03*
+        │   ├── [.mark]#groovy-regular-expressions-the-definitive-guide.adoc#
+        │   ├── [.mark]#installing-graalvm-ee-1-0-0-rc14-with-sdkman.adoc#
+        │   ├── [.mark]#intellij-idea-git-gpg-failed-to-sign-the-data.adoc#
+        │   ├── [.mark]#pragmatic-thinking-and-learning-book-review.adoc#
+        │   └── [.mark]#release-it-2nd-edition-book-review.adoc#
+        └── [.purple]*04*
+            ├── [.mark]#debugging-teams-book-review.adoc#
+            ├── [.mark]#graalvm-heap-size-of-native-image-how-to-set-it.adoc#
+            ├── [.mark]#spock-random-order-of-tests-how-to.adoc#
+            └── [.mark]#using-the-same-prefix-with-different-http-methods-in-ratpack.adoc#
+
+4 directories, 9 files
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ vim{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ vim _config.yml{cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,yaml,subs="{subs}"]
+----
+author: Szymon Stepniak
+bio: Groovista, Upwork's Top Rated freelancer, Toruń Java User Group founder, open&nbsp;source contributor, Stack Overflow addict, bedroom guitar player. I walk through e.printStackTrace() so you don't have to.
+photo: https://www.gravatar.com/avatar/b22c1842c6e8f7f2b9b3ed8c0d4efb4d?s=200
+language: en
+timezone: Europe/Warsaw
+
+# URL
+url: https://e.printstacktrace.blog
+root: /
+permalink: :title/
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+
+# Writing
+new_post_name: :year/:month/:title.adoc
+default_layout: post
+titlecase: false
+{cur2}
+~
+----
+
+[transition="slide"]
+=== How to make [.mark]#use# of it?
+
+
+[transition="slide"]
+=== Static site generator
+
+[.lora]
+A [.mark]#"compiler"# that produces the blog output
+
+[{slide-with-code}]
+=== AsciiDoc example
+
+[source,asciidoc,role="small",subs="attributes"]
+----
+I love https://sdkman.io/[*_SDKMAN!_*]. It made using multiple different Java distributions in a single operating system much more
+comfortable. You can install Java across different versions (from 6 to 13.EA) and different vendors (OpenJDK,
+Oracle, Zulu, Corretto or GraalVM CE to name a few). Switching between those versions is as simple as executing
+a single `sdk use java {version}` command and you are ready to use whatever Java you want. However, not all
+Java versions are available by default, but luckily, _SDKMAN!_ has a simple solution to this problem.
+
+++++
+&lt;!-- more --&gt;
+++++
+
+== Installing GraalVM EE 1.0.0-RC14
+
+I run some experiments with https://www.graalvm.org/[GraalVM] and the only version I can install directly with
+_SDKMAN!_ is GraalVM Community Edition. However, there is also GraalVM Enterprise Edition which provides some
+additional features, like improved performance. The main reason GraalVM EE is not available in _SDKMAN!_ is
+that it is distributed over OTN (Oracle Technology Network) only, so you need to accept OTN license agreementfootnote:[https://www.oracle.com/technetwork/licenses/early-adopter-license-2299792.html]
+and log in to start the file download. OK, so I downloaded *graalvm-ee-1.0.0-rc14-linux-amd64.tar.gz* file
+successfully. What's next?
+
+Let's start with the extracting files from the downloaded archive.
+
+[source,bash]
+&dash;&dash;&dash;&dash;
+$ tar -xvf graalvm-ee-1.0.0-rc14-linux-amd64.tar.gz
+&dash;&dash;&dash;&dash;
+
+After extracting all files, we can install local Java distribution with the following command.
+----
+
+[{slide-with-code}]
+=== Generated HTML
+
+[source,html,role="small"]
+----
+<article role="main" class="blog-post">
+<div class="paragraph">
+    <p>I love <a href="https://sdkman.io/" target="_blank" rel="noopener"><strong><em>SDKMAN!</em></strong></a>. It made using multiple different Java distributions in a single operating system much more comfortable. You can install Java across different versions (from 6 to 13.EA) and different vendors (OpenJDK, Oracle, Zulu, Corretto or GraalVM CE to name a few). Switching between those versions is as simple as executing a single
+    <code>sdk use java {version}</code> command and you are ready to use whatever Java you want. However, not all Java versions are available by default, but luckily, <em>SDKMAN!</em> has a simple solution to this problem.
+    </p>
+</div>
+<a id="more"></a>
+<div class="sect1">
+    <h2>Installing GraalVM EE 1.0.0-RC14</h2>
+    <div class="sectionbody">
+        <div class="paragraph">
+            <p>I run some experiments with <a href="https://www.graalvm.org/" target="_blank" rel="noopener">GraalVM</a> and the only version I can install directly with <em>SDKMAN!</em> is GraalVM Community Edition. However, there is also GraalVM Enterprise Edition which provides some additional features, like improved performance.
+            The main reason GraalVM EE is not available in <em>SDKMAN!</em> is that it is distributed over OTN (Oracle Technology Network) only, so you need to accept OTN license agreement<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> and log in to start the file download. OK, so I downloaded <strong>graalvm-ee-1.0.0-rc14-linux-amd64.tar.gz</strong> file successfully. What&#8217;s next?</p></div><div class="paragraph"><p>Let&#8217;s start with the extracting files from the downloaded archive.
+            </p>
+        </div>
+        <div class="listingblock">
+            <div class="content">
+                <pre class="highlightjs highlight">
+                    <code class="language-bash hljs" data-lang="bash">$ tar -xvf graalvm-ee-1.0.0-rc14-linux-amd64.tar.gz</code>
+                </pre>
+            </div>
+        </div>
+        <div class="paragraph"><p>After extracting all files, we can install local Java distribution with the following command.</p></div>
+    </div>
+</div>
+</article>
+----
+
+[{slide-with-code}]
+=== Generated blog post example
+
+image::generated-blog-post.png[background,cover]
+
+[{slide-with-code}]
+=== Hexo
+
+image::hexo.png[background,cover]
+
+[transition="slide"]
+=== [.mark]#Demo#
+
+[.lora]
+Let's write a blog post! 😃
+
+=== Which [.mark]#static site generator# is worth considering?
+
+[.lora]
+Is `Hexo` the right choice for me?
+
+[%notitle,transition="none"]
+=== StaticGen
+
+image::static-gen.png[background,cover]
+
+[%notitle,transition="none"]
+=== awesome-static-generators
+
+image::awesome-static-generators.png[background,cover]
+
+=== Let's summarize
+
+[%step,role="nobullets lora"]
+* icon:check[role="green"] Create [.mark]**Git** repository to store the [.mark]**source code**
+* icon:check[role="green"] Pick your favorite format _(`.md`, `.adoc`, etc.)_
+* icon:check[role="green"] [.mark]**Write** a few first blog posts!
+* icon:check[role="green"] Pick the [.mark]**static site generator** of your preference
+* icon:check[role="green"] *And have fun!*
+

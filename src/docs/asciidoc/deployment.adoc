@@ -1,0 +1,108 @@
+== Part 2: the [.mark]#deployment#
+
+[%notitle,transition="none"]
+== Github Pages - Cover
+
+image::github-pages.png[background,cover]
+
+[%notitle,transition="none"]
+== Github Pages - Repository
+
+image::github-pages-master.png[background,cover]
+
+[{slide-with-code}]
+== Github Pages - Deployment configuration
+
+.The deployment configuration in Hexo's `_config.yml` file
+[source,yaml]
+----
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:wololock/wololock.github.io.git
+  branch: master
+----
+
+[{slide-with-code}]
+== Github Pages - The Deployment
+
+.Executing the deployment command
+[source,bash,subs="quotes"]
+----
+$ *hexo deploy*
+
+Cloning into '.deploy_git'...
+...
+...
+[master 90a80bb] Site updated: 2019-04-16 14:12:17
+ 167 files changed, 192 insertions(+), 192 deletions(-)
+ rewrite 404.html (63%)
+ rewrite debugging-teams-book-review/index.html (87%)
+ create mode 100644 images/og/debugging-teams2.jpg
+To https://github.com/wololock/wololock.github.io.git
+   4ac249a..90a80bb  HEAD -> master
+INFO  Deploy done: git
+----
+
+== What about [.mark]#CICD#[.red]^*^?
+
+[.lora]
+Deploy on *commit* and *push*. From *anywhere*.
+
+[.small]
+([.red]#*# continuous integration and continuous deployment)
+
+[%notitle,transition="none"]
+== Travis
+
+image::travis.png[background,cover]
+
+[{slide-with-code}]
+== Travis config
+
+.The content of `.travis.yml` file
+[source,yml,role="small"]
+----
+language: node_js
+
+node_js:
+- "6"
+
+branches:
+  only:
+  - develop
+
+before_install:
+- npm install hexo-cli -g
+- npm install hexo --save
+- npm install
+
+before_script:
+- git config --global user.name 'Travis CI'
+- git config --global user.email 'bot@travis-ci.org'
+- sed -i'' "s~git@github.com:wololock/wololock.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/wololock/wololock.github.io.git~" _config.yml
+
+script:
+- hexo generate
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: sh deploy.sh
+  on:
+    branch: develop
+----
+
+== Do I need it?
+
+== Nope
+
+== But the benefits are...
+
+[.lora.text-left.margin-left-150.animation-slide-right]
+--
+icon:check[role="green"] [.mark]**Automated** deployment _(commit, push & go)_
+
+icon:check[role="green"] You can publish blog posts from [.mark]**anywhere**
+--
