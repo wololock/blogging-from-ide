@@ -344,30 +344,30 @@ $ vim _config.yml{cur2}
 [{slide-with-code}]
 === !
 
-[source,yaml,subs="{subs}"]
+[source,bash,subs="{subs}"]
 ----
-author: Szymon Stepniak
-bio: Groovista, Upwork's Top Rated freelancer, Toruń Java User Group founder, open&nbsp;source contributor, Stack Overflow addict, bedroom guitar player. I walk through e.printStackTrace() so you don't have to.
-photo: https://www.gravatar.com/avatar/b22c1842c6e8f7f2b9b3ed8c0d4efb4d?s=200
-language: en
-timezone: Europe/Warsaw
+[.orange]*author*: Szymon Stepniak
+[.orange]*bio*: Groovista, Upworks Top Rated freelancer, Toruń Java User Group founder, open
+[.orange]*photo*: https://www.gravatar.com/avatar/b22c1842c6e8f7f2b9b3ed8c0d4efb4d?s=200
+[.orange]*language*: en
+[.orange]*timezone*: Europe/Warsaw
 
 # URL
-url: https://e.printstacktrace.blog
-root: /
-permalink: :title/
+[.orange]*url*: https://e.printstacktrace.blog
+[.orange]*root*: /
+[.orange]*permalink*: :title/
 
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
+[.orange]*source_dir*: source
+[.orange]*public_dir*: public
+[.orange]*tag_dir*: tags
+[.orange]*archive_dir*: archives
+[.orange]*category_dir*: categories
 
 # Writing
-new_post_name: :year/:month/:title.adoc
-default_layout: post
-titlecase: false
+[.orange]*new_post_name*: :year/:month/:title.adoc
+[.orange]*default_layout*: post
+[.orange]*titlecase*: false
 {cur2}
 ~
 ----
