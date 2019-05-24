@@ -85,6 +85,90 @@ $ {cur2}
 
 [source,bash,subs="{subs}"]
 ----
+$ tree -a -L 1 .
+.
+├── [.purple]*cache*
+├── _config.yml
+├── [.green]*deploy.sh*
+├── [.purple]*.git*
+├── .gitignore
+├── [.purple]*node_modules*
+├── package.json
+├── README.md
+├── [.purple]*scaffolds*
+├── [.purple]*scripts*
+├── .snyk
+├── [.purple]*source*
+├── [.purple.mark]*themes*
+├── .travis.yml
+└── wololock.github.io.iml
+
+7 directories, 8 files
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -a -L 1 .
+.
+├── [.purple]*cache*
+├── _config.yml
+├── [.green]*deploy.sh*
+├── [.purple]*.git*
+├── .gitignore
+├── [.purple]*node_modules*
+├── package.json
+├── README.md
+├── [.purple.mark]*scaffolds*
+├── [.purple]*scripts*
+├── .snyk
+├── [.purple.mark]*source*
+├── [.purple.mark]*themes*
+├── .travis.yml
+└── wololock.github.io.iml
+
+7 directories, 8 files
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
+$ tree -a -L 1 .
+.
+├── [.purple]*cache*
+├── [.mark]#_config.yml#
+├── [.green.mark]*deploy.sh*
+├── [.purple]*.git*
+├── .gitignore
+├── [.purple]*node_modules*
+├── [.mark]#package.json#
+├── README.md
+├── [.purple.mark]*scaffolds*
+├── [.purple]*scripts*
+├── .snyk
+├── [.purple.mark]*source*
+├── [.purple.mark]*themes*
+├── [.mark]#.travis.yml#
+└── wololock.github.io.iml
+
+7 directories, 8 files
+
+$ {cur2}
+----
+
+[{slide-with-code}]
+=== !
+
+[source,bash,subs="{subs}"]
+----
 $ {cur2}
 ----
 
@@ -385,7 +469,7 @@ A [.mark]#"compiler"# that produces the blog output
 [{slide-with-code}]
 === AsciiDoc example
 
-[source,asciidoc,role="small",subs="attributes"]
+[source,asciidoc,subs="attributes"]
 ----
 I love https://sdkman.io/[*_SDKMAN!_*]. It made using multiple different Java distributions in a single operating system much more
 comfortable. You can install Java across different versions (from 6 to 13.EA) and different vendors (OpenJDK,
@@ -419,7 +503,7 @@ After extracting all files, we can install local Java distribution with the foll
 [{slide-with-code}]
 === Generated HTML
 
-[source,html,role="small"]
+[source,html]
 ----
 <article role="main" class="blog-post">
 <div class="paragraph">
@@ -487,5 +571,7 @@ image::awesome-static-generators.png[background,cover]
 * icon:check[role="green"] Pick your favorite format _(`.md`, `.adoc`, etc.)_
 * icon:check[role="green"] [.mark]**Write** a few first blog posts!
 * icon:check[role="green"] Pick the [.mark]**static site generator** of your preference
-* icon:check[role="green"] *And have fun!*
+
+[%step,role="nobullets lora"]
+* *And have fun! icon:smile-o[]*
 
