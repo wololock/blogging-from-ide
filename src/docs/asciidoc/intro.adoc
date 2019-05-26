@@ -6,20 +6,44 @@ image::vincent-tweet.png[]
 [.small]
 https://twitter.com/vvoyer/status/1087705536714412032
 
-[.logos.stretch]
+=== Why I have [.mark]#failed#?
+
+[.lora]
+I couldn't stay on track, and eventually I dropped blogging.
+
+=== What [.line-through]#motivates# [.mark]#drives# me?
+
 === !
 
-[.logo.git]
-image::logos/git.png[height=96]
-[.logo.github]
-image::logos/github.png[height=160]
-[.logo.asciidoctor]
-image::logos/asciidoctor.png[height=128]
-[.logo.idea]
-image::logos/idea.png[height=128]
-[.logo.travis]
-image::logos/travis.png[height=128]
-[.logo.hexo]
-image::logos/hexo.png[height=128]
-[.logo.cloudflare]
-image::logos/cloudflare.png[height=128]
+image::rescuetime.png[background,cover]
+
+=== I am driven by software [.mark]#development#
+
+[.lora]
+So what if I use...
+
+=== !
+
+image::logos/idea.png[height=256]
+
+=== !
+
+image::logos/asciidoctor.png[height=256]
+
+=== !
+
+image::logos/github.png[height=256]
+
+=== !
+
+image::logos/travis.png[height=256]
+
+=== What if I could [.mark]#blog# using my IDE and favorite tools?
+
+=== I want to [.mark]#share# with you...
+
+[%step,role="nobullets lora"]
+* icon:check[role=green] [.mark]*what* tools I have used to set up the open-source blog
+* icon:check[role=green] [.mark]*how* to use these tools in regular blogging
+* icon:check[role=green] [.mark]*why* there is no excuse to not learn by blogging
+* [.line-through]##icon:ban[role=red] [.mark]*how* to become rich through blogging##
