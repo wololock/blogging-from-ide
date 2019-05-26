@@ -55,6 +55,11 @@ icon:globe[role="grey"] [.grey]#https://#+++e.printstacktrace.blog+++[.grey]#/20
 === URL format [.mark]#matters#
 
 [.text-left.smaller.monospace]
+icon:globe[role="grey"] [.grey]#https://#+++e.printstacktrace.blog+++[.grey]#/[.mark.padding-0]##2019/04/##graalvm-and-groovy-how-to-start/#
+
+=== URL format [.mark]#matters#
+
+[.text-left.smaller.monospace]
 icon:globe[role="grey"] [.grey]#https://#+++e.printstacktrace.blog+++[.grey]#/graalvm-and-groovy-how-to-start/#
 
 [{slide-with-code}]

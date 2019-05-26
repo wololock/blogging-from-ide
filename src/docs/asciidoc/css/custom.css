@@ -315,6 +315,10 @@
     padding-right: 5px;
 }
 
+.reveal .padding-0 {
+    padding: 0;
+}
+
 .reveal div.title {
     text-align: left;
     font-size: 1.15rem;
