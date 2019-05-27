@@ -17,5 +17,5 @@ Do you have any [.mark]*questions*?
 [.mark]*Handout*, slides, and all materials are available:
 
 [.smaller]
-*https://github.com/wololock/blogging-from-ide-slides*
+*https://github.com/wololock/blogging-from-ide*
 --
