@@ -1,0 +1,28 @@
+== The most important [.mark]#question#
+
+`icon:question-circle[] icon:question-circle[] icon:question-circle[]`
+
+=== [.mark]#Why#?
+
+=== [.mark]#Learning# by blogging
+
+[.lora]
+Experiment, have fun, collect the data, document.
+
+=== [.mark]#Teaching# by blogging
+
+[.lora]
+Making complex things easy, sharing experience with others.
+
+=== [.mark]#Contributing# by blogging
+
+[.lora.smaller]
+Open-sourcing your blog motivates you to contribute even more.
+
+=== Would it work for [.mark]#you#?
+
+=== Start [.mark]#small#
+
+[.lora]
+_"Done is better than perfect"_
+
