@@ -85,6 +85,7 @@ asciidoctor {
         'revealjs_transition': 'fade',
         'revealjs_history': 'true',
         'revealjs_slideNumber': 'false',
+        'revealjs_progress': 'false',
         'revealjs_plugin_pdf': 'enabled'
     ])
     options template_dirs: [new File(templateDir,'templates').absolutePath]
