@@ -20,7 +20,7 @@ https://speakerdeck.com/wololock/running-developers-blog-directly-from-an-ide
 
 == Generating slides
 
-Convert the AsciiDoc to reveal.js by invoking the 'asciidoctor' goal:
+Convert the AsciiDoc to reveal.js by running the `asciidoctor` goal:
 
  $ ./gradlew clean asciidoctor
 
@@ -30,4 +30,4 @@ If you're using IntelliJ you can generate the IDE's files via:
 
  $ ./gradlew idea
 
-Open the file _build/asciidoc/reveal/example-manual.html_ in your browser to see the generated revealjs file.
+Open the file _build/asciidoc/revealjs/index.html_ in your browser to see the generated revealjs file.
