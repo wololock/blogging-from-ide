@@ -2,13 +2,29 @@
 
 This is the source code of _"Running developer's blog directly from IDE"_ talk.
 
-== Usage
+== Slides
+
+https://speakerdeck.com/wololock/running-developers-blog-directly-from-an-ide
+
+== Useful resources
+
+* https://twitter.com/vvoyer/status/1087705536714412032
+* https://e.printstacktrace.blog
+* https://asciidoctor.org
+* https://hexo.io
+* https://www.staticgen.com
+* https://github.com/myles/awesome-static-generators
+* https://pages.github.com
+* https://travis-ci.org
+* https://www.cloudflare.com
+
+== Generating slides
 
 Convert the AsciiDoc to reveal.js by invoking the 'asciidoctor' goal:
 
  $ ./gradlew clean asciidoctor
 
-== IntelliJ
+=== IntelliJ
 
 If you're using IntelliJ you can generate the IDE's files via:
 
