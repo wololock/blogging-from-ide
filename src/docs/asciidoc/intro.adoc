@@ -8,9 +8,6 @@ https://twitter.com/vvoyer/status/1087705536714412032
 
 === Why I have [.mark]#failed#?
 
-[.lora]
-I couldn't stay on track, and eventually I dropped blogging.
-
 === What [.line-through]#motivates# [.mark]#drives# me?
 
 === !
@@ -46,4 +43,4 @@ image::logos/travis.png[height=256]
 * icon:check[role=green] [.mark]*what* tools I have used to set up the open-source blog
 * icon:check[role=green] [.mark]*how* to use these tools in regular blogging
 * icon:check[role=green] [.mark]*why* there is no excuse to not learn by blogging
-* [.line-through]##icon:ban[role=red] [.mark]*how* to become rich through blogging##
+* [.line-through]##icon:times-circle[role=red] [.mark]*how* to become rich through blogging##

@@ -114,9 +114,9 @@ image::cloudflare-06.png[background,cover]
 === Cloudflare offers you...
 
 [%step,role="lora nobullets"]
-* icon:check[role="green"] SSL + [.mark]*HTTP/2* _(for better performance)_
+* icon:check[role="green"] SSL + [.mark]*HTTP/2* _(for a better performance)_
 * icon:check[role="green"] [.mark]*Caching* + global CDN
-* icon:check[role="green"] Page Rules _(a very limited alternative for [.mark]*mod_rewrite*)_
+* icon:check[role="green"] Page Rules _(a very limited alternative to [.mark]*mod_rewrite*)_
 * icon:check[role="green"] Firewall
 * icon:check[role="green"] Web traffic [.mark]*analytics*
 
